@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=9" />
+	<meta name="viewport" content="user-scalable=yes, width=950, height=600" />
+	<title>ДК архитектурасы: енгізу-шығару құрылғылары</title>
+        
+	<script type="text/javascript">
+
+         var tag = document.createElement("script");
+         tag.src = "http://learningapps.org/isonline.js?r="+Math.random();
+         var firstScriptTag = document.getElementsByTagName("script")[0];
+         firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+         function loadContent(){
+          document.getElementById("innerContent").innerHTML = '<a style="position:absolute;top:0px;right:0px;padding:0px; margin:0px; font-size:1px;text-decoration:none" href="javascript:location.reload()"><img border="0" style="width:16px" src="http://learningapps.org/style/refreshbtn.png" title="Reload" alt="" /></a><iframe id="frame" src="http://LearningApps.org/show?fullscreen=1&iBookAuthor=1&id=pdjonx9wn21" frameborder="0" width="950" height="600"></iframe>'; 
+         }
+
+         function checkOnline(){
+          if(typeof(isOnline) == "undefined"){
+           document.getElementById("innerContent").style.display="none";
+           document.getElementById("banner").style.display="block";
+          } 
+         }
+
+         window.setTimeout("loadContent()",1000);
+         window.setTimeout("checkOnline()",2000);
+	</script>
+	<style type="text/css">html,body {height:100%}</style>
+  </head>
+  <body style="margin:0px; padding:0px; background:url(loading.png) center center no-repeat">
+  <div id="banner" style="display:none;width:100%; position:absolute; z-index:10;text-align:center">
+   <a href="javascript:location.reload()">
+    <img src="connectionerror.png" style="margin-top:80px" alt="Connection error" />
+   </a>
+  </div>
+  <div id="innerContent" style="background:white; display:block; position:absolute; overflow:auto; width:950px; height:630px; ">
+  </div>
+  </body>
+</html>
